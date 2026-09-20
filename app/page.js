@@ -46,7 +46,7 @@ export default function MenuPage() {
       return;
     }
 
-    const phone = "2010120061304";
+    const phone = "201012061304";
     const typeText = orderType === 'dine-in' ? 'تناول بالمحل (صالة) 🍽️' : 'دلفري (توصيل) 🛵';
     
     let text = `مرحباً، أرغب في إتمام طلب جديد:\n`;
