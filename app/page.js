@@ -36,8 +36,7 @@ export default function MenuPage() {
 
   // حساب المجموع الكلي للمنتجات
   const itemsSubtotal = cart.reduce((acc, item) => acc + (item.numericPrice * item.quantity), 0);
-  const deliveryFee = orderType === 'delivery' ? 50 : 0; // افتراض مصاريف الشحن (يمكن تعديلها)
-  const totalAmount = itemsSubtotal + deliveryFee;
+  const totalAmount = itemsSubtotal;
 
   // إرسال الطلب للواتساب بالرقم الجديد وتفاصيل الحساب
   const handleWhatsAppCheckout = () => {
@@ -90,12 +89,14 @@ export default function MenuPage() {
       { name: 'فطيرة شوكولاتة', img: 'https://images.unsplash.com/photo-1579372786545-d24232daf58c?w=500&auto=format&fit=crop&q=60', prices: { كبير: '185 ج', عائلي: '250 ج' } },
     ],
     sandwiches: [
-      { name: 'شاورما فراخ', img: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&auto=format&fit=crop&q=60', prices: { سوري: '120 ج', فرنساوي: '140 ج' } },
-      { name: 'شاورما لحمة', img: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500&auto=format&fit=crop&q=60', prices: { سوري: '130 ج', فرنساوي: '150 ج' } },
-      { name: 'اقاشي فراخ', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60', prices: { سوري: '125 ج', فرنساوي: '145 ج' } },
-      { name: 'اقاشي لحمة', img: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=60', prices: { سوري: '135 ج', فرنساوي: '155 ج' } },
-      { name: 'كرسبي', img: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&auto=format&fit=crop&q=60', prices: { سوري: '130 ج', فرنساوي: '150 ج' } },
-      { name: 'شيش طاووق', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60', prices: { سوري: '130 ج', فرنساوي: '150 ج' } },
+      { name: 'شاورما فراخ', img: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&auto=format&fit=crop&q=60', prices: { سوري: '90 ج', فرنساوي: '100 ج' } },
+      { name: 'شاورما لحمة', img: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500&auto=format&fit=crop&q=60', prices: { سوري: '100 ج', فرنساوي: '110 ج' } },
+      { name: 'اقاشي فراخ', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60', prices: { سوري: '90 ج', فرنساوي: '100 ج' } },
+      { name: 'اقاشي لحمة', img: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=60', prices: { سوري: '100 ج', فرنساوي: '110 ج' } },
+      { name: 'كرسبي', img: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&auto=format&fit=crop&q=60', prices: { سوري: '90 ج', فرنساوي: '100 ج' } },
+      { name: 'شيش طاووق', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60', prices: { سوري: '100 ج', فرنساوي: '110 ج' } },
+      { name: 'بيرقر', price: 100, img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd'},
+ },
     ],
     mojito: [
       { name: 'موهيتو توت / فراولة / مانجو', img: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60', price: '75 ج' },
