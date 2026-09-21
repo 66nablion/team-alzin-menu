@@ -96,7 +96,7 @@ export default function MenuPage() {
       { name: 'كرسبي', img: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&auto=format&fit=crop&q=60', prices: { سوري: '90 ج', فرنساوي: '100 ج' } },
       { name: 'شيش طاووق', img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60', prices: { سوري: '100 ج', فرنساوي: '110 ج' } },
       { name: 'بيرقر', price: 100, img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd'},
- },
+
     ],
     mojito: [
       { name: 'موهيتو توت / فراولة / مانجو', img: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=60', price: '75 ج' },
